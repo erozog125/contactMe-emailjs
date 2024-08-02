@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="contact-form">
+        <h1>Contáctenos</h1>
+        <form id="frm-contact" action="/enviar" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input placeholder="Edwin Rozo Gómez" type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input placeholder="joe@servicemail.com" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cellphone">Número de teléfono:</label>
+                <input placeholder="+5731000000" type="tel" id="cellphone" name="cellphone" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button id="btn-submit" type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
